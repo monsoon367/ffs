@@ -3,7 +3,7 @@ const vid = document.querySelector('#vid');
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
         vid.requestFullscreen();
-        screen.orientation.lock("landscape-primary");
+        screen.orientation.lock("landscape-secondary");
       }else{
         document.exitFullscreen();
         screen.orientation.unlock();
